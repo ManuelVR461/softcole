@@ -1,32 +1,35 @@
-Test
-Un colegio necesita un sistema para administrar sus cursos. El sistema tiene que soportar que
+<span>Test</span>
+<br>
+<p>Un colegio necesita un sistema para administrar sus cursos. El sistema tiene que soportar que
 se ingresen varios cursos. Cada curso tendrá un profesor a cargo y una serie de alumnos
 inscritos. Cada profesor, así como cada alumno puede estar en más de un curso. Además cada
 curso tendrá una cantidad no determinada de pruebas, y el sistema debe permitir ingresar la
-nota para cada alumno en cada prueba. Todas las pruebas valen lo mismo.
-Modelo de datos
-Escriba a continuación las tablas que utilizaría para resolver este problema con los campos y
+nota para cada alumno en cada prueba. Todas las pruebas valen lo mismo.</p>
+
+<span>Modelo de datos</span><br>
+<p>Escriba a continuación las tablas que utilizaría para resolver este problema con los campos y
 llaves de éstas. Intente hacer el sistema lo más robusto posible, pero sin incluir datos
-adicionales a los que se plantean acá.
+adicionales a los que se plantean acá.</p>
 SQL
-Considerando el enunciado anterior conteste las siguientes preguntas:
-1. Escriba una Query que entregue la lista de alumnos para el curso "programación"
-2. Escriba una Query que calcule el promedio de notas de un alumno en un curso.
-3. Escriba una Query que entregue a los alumnos y el promedio que tiene en cada ramo.
-4. Escriba una Query que lista a todos los alumnos con más de un ramo con promedio rojo.
-5. Dejando de lado el problema del cólegio se tiene una tabla con información de jugadores
-de tenis: PLAYERS(Nombre, Pais, Ranking). Suponga que Ranking es un número de 1 a
-100 que es distinto para cada jugador. Si la tabla en un momento dado tiene solo 20
-tuplas, indique cuantas tuplas tiene la tabla que resulta de la siguiente consulta:
-SELECT c1.Nombre, c2.Nombre
-FROM PLAYERS c1, PLAYERS c2
-WHERE c1.Ranking > c2.Ranking
-Seleccione las respuestas correctas:
-a) 400
-b) 190
-c) 20
-d) imposible saberlo
+<h5>Considerando el enunciado anterior conteste las siguientes preguntas:</h5>
+<ol>
+ <li>Escriba una Query que entregue la lista de alumnos para el curso "programación"</li>
+ <li>Escriba una Query que calcule el promedio de notas de un alumno en un curso.</li>
+ <li>Escriba una Query que entregue a los alumnos y el promedio que tiene en cada ramo.</li>
+ <li>Escriba una Query que lista a todos los alumnos con más de un ramo con promedio rojo.</li>
+ <li>Dejando de lado el problema del cólegio se tiene una tabla con información de jugadores de tenis: PLAYERS(Nombre, Pais, Ranking). Suponga que Ranking es un número de 1 a 100 que es distinto para cada jugador. Si la tabla en un momento dado tiene solo 20  tuplas, indique cuantas tuplas tiene la tabla que resulta de la siguiente consulta:</li>
+ 
+ <p> SELECT c1.Nombre, c2.Nombre FROM PLAYERS c1, PLAYERS c2 WHERE c1.Ranking > c2.Ranking</p>
+</lo> 
+<h5><Seleccione las respuestas correctas:</h5>
+<lo>
+ <li>a) 400</li>
+ <li>b) 190</li>
+ <li>c) 20</li>
+ <li>d) imposible saberlo</li>
+ </lo>
 Diseño de software
+ 
 Backend
 Si usted estuviera resolviendo el problema del colegio implementando una aplicación web que
 incluya las siguientes funcionalidades:
