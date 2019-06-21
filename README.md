@@ -36,11 +36,11 @@ adicionales a los que se plantean acá.</p>
 <p>Backend<p>
  <br>
 <p>Si usted estuviera resolviendo el problema del colegio implementando una aplicación web que incluya las siguientes funcionalidades:</p>
-<ol>
+<ul>
  <li>CRUD alumnos, cursos, pruebas y notas.</li>
  <li>Listar a los alumnos junto a su promedio de notas.</li>
  <li>Filtar a todos los alumnos con más de un ramo con promedio rojo.</li>
- </ol>
+ </ul>
  <br>
  <p>Puede utilizar alguno de estos frameworks:</p>
  <ul>
