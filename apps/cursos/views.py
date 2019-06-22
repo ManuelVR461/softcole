@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from apps.cursos.form import CursoForm
 from apps.cursos.models import Curso,RelacionCursoProfesor

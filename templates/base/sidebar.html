@@ -18,8 +18,11 @@
     <nav class="drawer-navigation">
         <ul>
             <li>
-                <a class="icons icon-bank active" href="#" style="text-decoration: none;">Inicio</a>
+                <a class="icons icon-bank active" href="{% url 'home' %}" style="text-decoration: none;">Inicio</a>
             </li>
+            <li>
+                <a class="icons icon-tag" rel="nofollow" href="{% url 'index_cursos' %}" style="text-decoration: none;">Cursos</a>
+            </li>       
             <li>
                 <a class="icons icon-creditcard"  href="{% url 'index_profesor' %}" style="text-decoration: none;" >Profesores</a>
             </li>
@@ -34,7 +37,6 @@
                 </a>
                 <ul class="children">
                     <li>
-                        <a class="icons icon-tag" rel="nofollow" href="{% url 'index_cursos' %}" style="text-decoration: none;">Registrar Curso</a>
                         <a class="icons icon-money-round" rel="nofollow" href="#" style="text-decoration: none;">Asignar Curso</a>
                         <a class="icons icon-money-round" rel="nofollow" href="#" style="text-decoration: none;">Inscribir Alumno</a>
                     </li>
