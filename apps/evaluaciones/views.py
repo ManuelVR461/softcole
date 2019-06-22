@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index_evaluaciones(request):
-    return HttpResponse("index evaluaciones");
+    return render(request, 'academicos/admin_evaluaciones.html');
