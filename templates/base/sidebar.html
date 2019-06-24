@@ -18,8 +18,9 @@
     <nav class="drawer-navigation">
         <ul>
             <li>
-                <a class="icons icon-bank active" href="{% url 'home' %}" style="text-decoration: none;">Inicio</a>
+                <a class="icons icon-bank active" href="{% url 'inicio:index' %}" style="text-decoration: none;">Inicio</a>
             </li>
+            {% if user.is_authenticated %}
             <li>
                 <a class="icons icon-tag" rel="nofollow" href="{% url 'index_cursos' %}" style="text-decoration: none;">Cursos</a>
             </li>       
@@ -41,8 +42,16 @@
                         <a class="icons icon-money-round" rel="nofollow" href="#" style="text-decoration: none;">Administrar Evaluaciones</a>
                         <a class="icons icon-money-round" rel="nofollow" href="#" style="text-decoration: none;">Inscribir Alumno</a>
                     </li>
-                    
                 </ul>
+            </li>
+            {% endif %}
+            <li>
+            {# Some logic on what to display for last item#}
+                {% if user.is_authenticated %}
+                    <a class="icons icon-bank" href="{% url 'inicio:user_logout' %}" style="text-decoration: none;">Salir</a>
+                {% else %}
+                    <a class="icons icon-bank" href="{% url 'inicio:user_login' %}" style="text-decoration: none;">Entrar</a>
+            {% endif %}
             </li>
         </ul>
     </nav>
